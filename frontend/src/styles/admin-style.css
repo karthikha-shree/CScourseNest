@@ -1,0 +1,461 @@
+/* ✅ Header - Logo Styling */
+.logo-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.college-logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .college-logo {
+    max-width: 100%;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .college-logo {
+    max-width: 70%;
+    max-height: 150px;
+  }
+}
+
+/* ✅ Navigation Bar */
+nav {
+  background-color: #2a323a;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #2e6aa6;
+  border-radius: 5px;
+}
+/* ✅ Login Box Styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-box {
+  width: 350px; /* Reduced width */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-box h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-box button:hover {
+  background: linear-gradient(45deg, #0056b3, #004099);
+}
+
+/* ✅ Mobile & Tablet View Adjustments */
+@media (max-width: 768px) {
+  .login-box {
+    width: 300px;
+    padding: 15px;
+  }
+
+  .login-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .login-box input {
+    font-size: 0.9rem;
+  }
+
+  .login-box button {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ✅ Admin Panel Container */
+.admin-panel-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 2px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-panel-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #840c0c;
+  margin-bottom: 15px;
+}
+
+/* ✅ Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: #352828;
+  font-size: 1.1rem;
+}
+
+/* ✅ Select, Input Fields */
+select,
+input {
+  width: 90%;
+  padding: 100px;
+  margin-top: 6px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+select:focus,
+input:focus {
+  border-color: #17304b;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.4);
+}
+
+/* ✅ Buttons */
+button {
+  margin-top: 12px;
+  padding: 10px 15px;
+  background: linear-gradient(45deg, #45607d, #0056b3);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #004099);
+  transform: scale(1.05);
+}
+
+.add-subject {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between input and button */
+  margin-top: 10px;
+}
+
+.add-subject input {
+  flex: 1; /* Makes the input expand */
+  min-width: 250px; /* Ensures it's not too small */
+  padding: 8px;
+  font-size: 16px;
+}
+
+.add-subject button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #004aad; /* Adjust color as needed */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-subject button:hover {
+  background-color: #003080;
+}
+
+/* ✅ Subject List */
+.subject-list {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+.subject-list h3 {
+  text-align: center;
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.subject-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subject-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.subject-list li:hover {
+  transform: scale(1.02);
+}
+
+/* ✅ Subject Name Styling */
+.subject-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* ✅ Edit & Delete Buttons */
+.subject-list button {
+  background-color: #dc3545;
+  padding: 8px 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.subject-list button:hover {
+  background-color: #b02a37;
+  transform: scale(1.1);
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .admin-panel-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input,
+  select {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .subject-list h3 {
+    font-size: 1.2rem;
+  }
+}
+/* ✅ Logout Icon Styling */
+.logout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Adds spacing above footer */
+}
+
+.logout-icon {
+  font-size: 30px; /* Adjust icon size */
+  color: rgb(6, 106, 238); /* Logout icon color */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, color 0.3s;
+}
+
+.logout-icon:hover {
+  color: rgb(54, 79, 218); /* Darker red on hover */
+  transform: scale(1.2); /* Slight zoom effect */
+}
+
+
+/* ✅ Footer */
+footer {
+  background-color: #2b3743;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-container .left,
+.footer-container .right {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-container a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Mobile Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.icon-btn {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 5px;
+  color: rgb(6, 106, 238); 
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+  color: rgb(54, 79, 218);
+}
+/* ✅ Subject Table */
+.subject-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  
+}
+
+.subject-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  
+}
+
+/* ✅ Add Subject Table */
+.add-subject-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  
+}
+
+.add-subject-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* ✅ Input Field for Adding Subject */
+.add-subject-table input {
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ✅ Aligning Icons Properly */
+.icon-cell {
+  text-align: center;
+  width: 100px;
+}
+.file-management {
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload {
+  display: flex;
+  align-items: center; /* Ensure items align properly */
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+
+.upload-icon {
+  display: flex;
+  align-items: center;
+}
+
+.upload-icon .icon-btn {
+  font-size: 20px;
+}
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.file-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.file-category {
+  background: #ddd;
+  font-weight: bold;
+  text-align: left;
+}
+
+.file-row td {
+  text-align: left;
+}
+
+.icon-cell {
+  text-align: center;
+}
